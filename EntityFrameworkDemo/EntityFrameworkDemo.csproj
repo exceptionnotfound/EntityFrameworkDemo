@@ -169,13 +169,6 @@
       <DependentUpon>NorthwindEntities.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="NorthwindEntities.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="NorthwindEntities_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>NorthwindEntities.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="ModelFirst\Northwind.edmx">
