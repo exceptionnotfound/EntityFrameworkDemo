@@ -63,18 +63,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeFirst\ExistingDatabase\Category.cs" />
-    <Compile Include="CodeFirst\ExistingDatabase\Customer.cs" />
-    <Compile Include="CodeFirst\ExistingDatabase\CustomerDemographic.cs" />
-    <Compile Include="CodeFirst\ExistingDatabase\Employee.cs" />
-    <Compile Include="CodeFirst\ExistingDatabase\Northwind.cs" />
-    <Compile Include="CodeFirst\ExistingDatabase\Order.cs" />
-    <Compile Include="CodeFirst\ExistingDatabase\Order_Detail.cs" />
-    <Compile Include="CodeFirst\ExistingDatabase\Product.cs" />
-    <Compile Include="CodeFirst\ExistingDatabase\Region.cs" />
-    <Compile Include="CodeFirst\ExistingDatabase\Shipper.cs" />
-    <Compile Include="CodeFirst\ExistingDatabase\Supplier.cs" />
-    <Compile Include="CodeFirst\ExistingDatabase\Territory.cs" />
+    <Compile Include="CodeFirst\Northwind\Category.cs" />
+    <Compile Include="CodeFirst\Northwind\Customer.cs" />
+    <Compile Include="CodeFirst\Northwind\CustomerDemographic.cs" />
+    <Compile Include="CodeFirst\Northwind\Employee.cs" />
+    <Compile Include="CodeFirst\Northwind\Northwind.cs" />
+    <Compile Include="CodeFirst\Northwind\Order.cs" />
+    <Compile Include="CodeFirst\Northwind\Order_Detail.cs" />
+    <Compile Include="CodeFirst\Northwind\Product.cs" />
+    <Compile Include="CodeFirst\Northwind\Region.cs" />
+    <Compile Include="CodeFirst\Northwind\Shipper.cs" />
+    <Compile Include="CodeFirst\Northwind\Supplier.cs" />
+    <Compile Include="CodeFirst\Northwind\Territory.cs" />
     <Compile Include="DatabaseFirst\Category.cs">
       <DependentUpon>Northwind.tt</DependentUpon>
     </Compile>
