@@ -219,10 +219,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>CourseCatalog.mdf</DependentUpon>
     </Content>
-    <Content Include="Model\NorthwindEntities.mdf">
+    <Content Include="Northwind\NorthwindEntities.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Model\NorthwindEntities_log.ldf">
+    <Content Include="Northwind\NorthwindEntities_log.ldf">
       <DependentUpon>NorthwindEntities.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
