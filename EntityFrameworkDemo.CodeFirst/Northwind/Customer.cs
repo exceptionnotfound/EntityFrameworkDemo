@@ -12,6 +12,7 @@ namespace EntityFrameworkDemo.CodeFirst.Northwind
         {
             Orders = new HashSet<Order>();
             CustomerDemographics = new HashSet<CustomerDemographic>();
+            Surveys = new HashSet<Survey>();
         }
 
         [StringLength(5)]
@@ -51,5 +52,7 @@ namespace EntityFrameworkDemo.CodeFirst.Northwind
         public virtual ICollection<Order> Orders { get; set; }
 
         public virtual ICollection<CustomerDemographic> CustomerDemographics { get; set; }
+
+        public virtual ICollection<Survey> Surveys { get; set; }
     }
 }

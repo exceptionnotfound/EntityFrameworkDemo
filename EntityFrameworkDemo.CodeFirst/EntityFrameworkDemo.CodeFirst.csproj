@@ -66,6 +66,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201505281721099_InitialDatabase.cs" />
+    <Compile Include="Migrations\201505281721099_InitialDatabase.Designer.cs">
+      <DependentUpon>201505281721099_InitialDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Northwind\Category.cs" />
     <Compile Include="Northwind\Customer.cs" />
@@ -78,6 +82,7 @@
     <Compile Include="Northwind\Region.cs" />
     <Compile Include="Northwind\Shipper.cs" />
     <Compile Include="Northwind\Supplier.cs" />
+    <Compile Include="Northwind\Survey.cs" />
     <Compile Include="Northwind\Territory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -110,6 +115,11 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201505281721099_InitialDatabase.resx">
+      <DependentUpon>201505281721099_InitialDatabase.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

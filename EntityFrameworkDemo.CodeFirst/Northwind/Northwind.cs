@@ -23,6 +23,7 @@ public partial class Northwind : DbContext
     public virtual DbSet<Shipper> Shippers { get; set; }
     public virtual DbSet<Supplier> Suppliers { get; set; }
     public virtual DbSet<Territory> Territories { get; set; }
+    public virtual DbSet<Survey> Surveys { get; set; }
 
     protected override void OnModelCreating(DbModelBuilder modelBuilder)
     {
@@ -36,6 +37,16 @@ public partial class Northwind : DbContext
             .Map(m => m.ToTable("CustomerCustomerDemo").MapLeftKey("CustomerTypeID").MapRightKey("CustomerID"));
 
         modelBuilder.Entity<Customer>()
+            .Property(e => e.CustomerID)
+            .IsFixedLength();
+
+        modelBuilder.Entity<Customer>()
+            .HasMany(e => e.Surveys)
+            .WithOptional(e => e.Customer)
+            .HasForeignKey(e => e.CustomerID);
+
+        modelBuilder.Entity<Survey>()
+            .HasKey(e => e.SurveyID)
             .Property(e => e.CustomerID)
             .IsFixedLength();
 
