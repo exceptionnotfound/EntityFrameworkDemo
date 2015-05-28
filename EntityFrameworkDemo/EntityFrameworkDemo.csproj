@@ -63,18 +63,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeFirst\Northwind\Category.cs" />
-    <Compile Include="CodeFirst\Northwind\Customer.cs" />
-    <Compile Include="CodeFirst\Northwind\CustomerDemographic.cs" />
-    <Compile Include="CodeFirst\Northwind\Employee.cs" />
-    <Compile Include="CodeFirst\Northwind\Northwind.cs" />
-    <Compile Include="CodeFirst\Northwind\Order.cs" />
-    <Compile Include="CodeFirst\Northwind\Order_Detail.cs" />
-    <Compile Include="CodeFirst\Northwind\Product.cs" />
-    <Compile Include="CodeFirst\Northwind\Region.cs" />
-    <Compile Include="CodeFirst\Northwind\Shipper.cs" />
-    <Compile Include="CodeFirst\Northwind\Supplier.cs" />
-    <Compile Include="CodeFirst\Northwind\Territory.cs" />
     <Compile Include="DatabaseFirst\Category.cs">
       <DependentUpon>Northwind.tt</DependentUpon>
     </Compile>

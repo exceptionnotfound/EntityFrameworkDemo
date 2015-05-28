@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkDemo", "EntityFrameworkDemo\EntityFrameworkDemo.csproj", "{2E265DBA-841B-4379-B60A-8001F24EF15A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkDemo.CodeFirst", "EntityFrameworkDemo.CodeFirst\EntityFrameworkDemo.CodeFirst.csproj", "{BE3B71B3-E1B0-4A9B-9C85-A03EF42D716C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2E265DBA-841B-4379-B60A-8001F24EF15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E265DBA-841B-4379-B60A-8001F24EF15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E265DBA-841B-4379-B60A-8001F24EF15A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3B71B3-E1B0-4A9B-9C85-A03EF42D716C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3B71B3-E1B0-4A9B-9C85-A03EF42D716C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3B71B3-E1B0-4A9B-9C85-A03EF42D716C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3B71B3-E1B0-4A9B-9C85-A03EF42D716C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
