@@ -66,19 +66,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeFirst\Northwind\Category.cs" />
-    <Compile Include="CodeFirst\Northwind\Customer.cs" />
-    <Compile Include="CodeFirst\Northwind\CustomerDemographic.cs" />
-    <Compile Include="CodeFirst\Northwind\Employee.cs" />
-    <Compile Include="CodeFirst\Northwind\Northwind.cs" />
-    <Compile Include="CodeFirst\Northwind\Order.cs" />
-    <Compile Include="CodeFirst\Northwind\Order_Detail.cs" />
-    <Compile Include="CodeFirst\Northwind\Product.cs" />
-    <Compile Include="CodeFirst\Northwind\Region.cs" />
-    <Compile Include="CodeFirst\Northwind\Shipper.cs" />
-    <Compile Include="CodeFirst\Northwind\Supplier.cs" />
-    <Compile Include="CodeFirst\Northwind\Territory.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Northwind\Category.cs" />
+    <Compile Include="Northwind\Customer.cs" />
+    <Compile Include="Northwind\CustomerDemographic.cs" />
+    <Compile Include="Northwind\Employee.cs" />
+    <Compile Include="Northwind\Northwind.cs" />
+    <Compile Include="Northwind\Order.cs" />
+    <Compile Include="Northwind\Order_Detail.cs" />
+    <Compile Include="Northwind\Product.cs" />
+    <Compile Include="Northwind\Region.cs" />
+    <Compile Include="Northwind\Shipper.cs" />
+    <Compile Include="Northwind\Supplier.cs" />
+    <Compile Include="Northwind\Survey.cs" />
+    <Compile Include="Northwind\Territory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -86,10 +87,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Northwind\NorthwindEntities.mdf">
+    <Content Include="Database\NorthwindEntities.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Northwind\NorthwindEntities_log.ldf">
+    <Content Include="Database\NorthwindEntities_log.ldf">
       <DependentUpon>NorthwindEntities.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
