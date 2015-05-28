@@ -66,11 +66,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201505281721099_InitialDatabase.cs" />
-    <Compile Include="Migrations\201505281721099_InitialDatabase.Designer.cs">
-      <DependentUpon>201505281721099_InitialDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Northwind\Category.cs" />
     <Compile Include="Northwind\Customer.cs" />
     <Compile Include="Northwind\CustomerDemographic.cs" />
@@ -91,15 +86,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database\NorthwindEntities.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database\NorthwindEntities_log.ldf">
-      <DependentUpon>NorthwindEntities.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
@@ -116,10 +102,15 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201505281721099_InitialDatabase.resx">
-      <DependentUpon>201505281721099_InitialDatabase.cs</DependentUpon>
-    </EmbeddedResource>
+    <Content Include="Database\NorthwindEntities.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\NorthwindEntities_log.ldf">
+      <DependentUpon>NorthwindEntities.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
