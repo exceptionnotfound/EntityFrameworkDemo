@@ -150,19 +150,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CourseCatalog.edmx</DependentUpon>
     </Compile>
-    <Compile Include="ModelFirst\Northwind\Category.cs" />
-    <Compile Include="ModelFirst\Northwind\Customer.cs" />
-    <Compile Include="ModelFirst\Northwind\CustomerDemographic.cs" />
-    <Compile Include="ModelFirst\Northwind\Employee.cs" />
-    <Compile Include="ModelFirst\Northwind\Northwind.cs" />
-    <Compile Include="ModelFirst\Northwind\Order.cs" />
-    <Compile Include="ModelFirst\Northwind\Order_Detail.cs" />
-    <Compile Include="ModelFirst\Northwind\Product.cs" />
-    <Compile Include="ModelFirst\Northwind\Region.cs" />
-    <Compile Include="ModelFirst\Northwind\Shipper.cs" />
-    <Compile Include="ModelFirst\Northwind\Supplier.cs" />
-    <Compile Include="ModelFirst\Northwind\Survey.cs" />
-    <Compile Include="ModelFirst\Northwind\Territory.cs" />
     <Compile Include="ModelFirst\Student.cs">
       <DependentUpon>CourseCatalog.tt</DependentUpon>
     </Compile>
@@ -220,10 +207,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>CourseCatalog.mdf</DependentUpon>
     </Content>
-    <Content Include="Northwind\NorthwindEntities.mdf">
+    <Content Include="DatabaseFirst\Database\NorthwindEntities.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Northwind\NorthwindEntities_log.ldf">
+    <Content Include="DatabaseFirst\Database\NorthwindEntities_log.ldf">
       <DependentUpon>NorthwindEntities.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

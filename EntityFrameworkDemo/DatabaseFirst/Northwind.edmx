@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="NorthwindEntitiesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="NorthwindEntitiesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Categories">
           <Key>
             <PropertyRef Name="CategoryID" />
@@ -406,8 +406,7 @@
             <End Role="Territories" EntitySet="Territories" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="NorthwindEntitiesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -746,13 +745,13 @@
             <End Role="Territories" EntitySet="Territories" />
           </AssociationSet>
           <FunctionImport Name="CustOrderHist" ReturnType="Collection(NorthwindEntitiesModel.CustOrderHist_Result)">
-            <Parameter Name="CustomerID" Mode="In" Type="String" />
+          <Parameter Name="CustomerID" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="CustOrdersDetail" ReturnType="Collection(NorthwindEntitiesModel.CustOrdersDetail_Result)">
-            <Parameter Name="OrderID" Mode="In" Type="Int32" />
+          <Parameter Name="OrderID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="CustOrdersOrders" ReturnType="Collection(NorthwindEntitiesModel.CustOrdersOrders_Result)">
-            <Parameter Name="CustomerID" Mode="In" Type="String" />
+          <Parameter Name="CustomerID" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="Employee_Sales_by_Country" ReturnType="Collection(NorthwindEntitiesModel.Employee_Sales_by_Country_Result)">
             <Parameter Name="Beginning_Date" Mode="In" Type="DateTime" />
